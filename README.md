@@ -11,18 +11,18 @@ Example resize app on angular 8. [Run]
 
 Обратить внимание на производительность (на странице могут быть сотни произвольных компонентов)
 
-`
+```bash
 interface IConfig {
   medium: number;
   large: number;
 }
-`
+```
 
-`
+```bash
 small: viewportWidth < config.medium
 medium: config.medium <= viewportWidth < config.large
 large: config.large <= viewportWidth
-`
+```
 
 [шаблон приложения]: https://stackblitz.com/edit/vim8-2-resize-template?file=app%2Fapp.component.html
 [Run]: https://stackblitz.com/github/mk13kos/resize
